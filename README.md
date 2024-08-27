@@ -1,4 +1,4 @@
-# Encriptador-de-texto---Challenge-oracle-one
+# Encriptador-de-texto---Challenge 1-oracle-one
 Este es un encriptador de texto desarrollado para Alura Latam,
 Challenge 1 - Programa Oracle one
 
