@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/Logo@2x.png" alt="Logo de Alura Latam" class="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main>
+        <section class="seccion-izquierda">
+            <textarea class="area-texto" placeholder="Ingrese el texto aquí." cols="30" rows="10" id="area-texto"></textarea>
+            <div class="advertencia">
+                <span class="emoji-advertencia">&#9888;</span>
+                <h6>Sólo letras, sin tildes ni caracteres especiales ni números.</h6>
+            </div>
+            <span id="mensaje-error" class="mensaje-error"></span>
+            <div class="botones">
+                <button class = "boton-encriptar" onclick = "botonEncriptar()">Encriptar</button>
+                <button class = "boton-desencriptar" onclick = "botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion-derecha">
+            <div class="ocultar">
+                <img src="assets/Muñeco.png" alt="Un muñeco con una lupa" class="munieco">
+                <h2>Ningún mensaje fue encontrado:</h2>
+                <p>Ingrese el texto que desea encriptar o desencriptar.</p>
+            </div>
+            <textarea cols="30" rows="10" class="texto-procesado" id="texto-procesado"></textarea>
+            <div class="relleno">  
+                <span class="emoji-advertencia">&#9888;</span>
+                <h6>Sólo letras, sin tildes ni caracteres especiales ni números.</h6>
+            </div>
+            <span id="mensaje-confirmacion" class="mensaje-confirmacion"></span>
+            <div class="copiar">
+                <button class = "boton-copiar" onclick = "copiar()">Copiar</button>
+                <button class = "boton-limpiar" onclick = "limpiar()">Limpiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>@copyright 2024 - Desarrollado por Angie Samaca para Alura Latam - Oracle One</p>       
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
